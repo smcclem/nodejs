@@ -1,0 +1,13 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  name: nodejs
+spec:
+  # Add fields here
+  version: 1.0.0
+  applicationImage: nodejs 
+  stack: nodejs
+  service:
+    type: NodePort
+    port: 3000
+  expose: true
